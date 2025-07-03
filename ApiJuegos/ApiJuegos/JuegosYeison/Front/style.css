@@ -1,0 +1,92 @@
+/* styles.css */
+
+body {
+  font-family: 'Courier New', monospace;
+  margin: 0;
+  background: radial-gradient(circle at center, #0a0a0a, #1c0030);
+  color: #e0e0e0;
+}
+
+header {
+  background-color: #25003e;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 0 15px #ff00cc;
+}
+
+header h1 {
+  color: #ff00cc;
+  font-size: 2.2rem;
+  text-shadow: 0 0 5px #ff00cc, 0 0 10px #8a00b8;
+  margin: 0;
+}
+
+#games-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.2rem;
+  padding: 2rem;
+}
+
+.card {
+  background: #1a0028;
+  border: 2px solid #700080;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 0 10px #4b0082;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #ff00cc;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 6px;
+  border: 2px solid #ff00cc;
+}
+
+.card h3 {
+  margin: 0.8rem 0 0.4rem;
+  color: #ff66ff;
+}
+
+.platforms,
+.stores {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.stores a {
+  color: #00e5ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.stores a:hover {
+  text-shadow: 0 0 5px #00e5ff;
+}
+
+.pagination {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  background-color: #ff00cc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 10px #ff00cc;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background-color: #8a00b8;
+  box-shadow: 0 0 20px #ff00cc;
+}
